@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title></title>
+	<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+
+  var e = document.getElementById("go");
+  
+  e.addEventListener( "click", function() {
+
+    var name=prompt("What is your name?","Code master Perry");
+    if ( name!=null && name!="" ) {
+      output = "Well " + name + ". Complete Idiot if I should say so!";
+      }
+    else {
+      output = "Idiot, I asked you your name dude!";
+      }
+    
+    document.getElementById( "msg" ).innerText = output;
+
+  }, false);
+  
+});
+</script>
+
+<!-- Replace '{action page}' with your own action page to support non-JavaScript users -->
+<form name="myForm" action="{action page}">
+  <input id="go" type="button" value="Click me...really!">
+</form>
+<p id="msg"></p>
+</head>
+<body>
+
+</body>
+</html>
